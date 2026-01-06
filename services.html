@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - PixelCraft Digital Agency</title>
+    <meta name="description" content="Comprehensive digital services by PixelCraft - Web Development, UI/UX Design, Mobile Apps, and more">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-cube"></i>
+                    <span>PixelCraft</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-extras">
+                <button class="theme-switcher" id="theme-switcher" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-cta-btn" onclick="openModal('quote-modal')">
+                    Get Quote
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h1 class="section-title">Our Services</h1>
+                <p class="section-subtitle">
+                    Comprehensive digital solutions to transform your business and enhance your online presence
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="detailed-services">
+        <div class="container">
+            <div class="service-detail" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Web Development</h2>
+                        <p>
+                            We create modern, responsive websites and web applications using cutting-edge technologies. 
+                            From simple landing pages to complex e-commerce platforms, we deliver solutions that perform.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check"></i> Security Implementation</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" alt="Web Development">
+                </div>
+            </div>
+            
+            <div class="service-detail reverse" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>UI/UX Design</h2>
+                        <p>
+                            We design beautiful and intuitive user interfaces that provide exceptional user experiences. 
+                            Our design process focuses on user research, wireframing, and prototyping.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> User Research</li>
+                            <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+                            <li><i class="fas fa-check"></i> Visual Design</li>
+                            <li><i class="fas fa-check"></i> Usability Testing</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Sketch</span>
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">Photoshop</span>
+                            <span class="tech-tag">Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop" alt="UI/UX Design">
+                </div>
+            </div>
+            
+            <div class="service-detail" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Mobile App Development</h2>
+                        <p>
+                            We develop native and cross-platform mobile applications for iOS and Android devices. 
+                            Our apps are built for performance, usability, and scalability.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Native iOS & Android</li>
+                            <li><i class="fas fa-check"></i> Cross-platform Development</li>
+                            <li><i class="fas fa-check"></i> App Store Optimization</li>
+                            <li><i class="fas fa-check"></i> Push Notifications</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Mobile App Development">
+                </div>
+            </div>
+            
+            <div class="service-detail reverse" data-aos="fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Cloud Solutions</h2>
+                        <p>
+                            We provide scalable cloud infrastructure and deployment solutions. From hosting to DevOps, 
+                            we help you leverage the power of cloud computing.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cloud Architecture</li>
+                            <li><i class="fas fa-check"></i> DevOps Implementation</li>
+                            <li><i class="fas fa-check"></i> Scalable Infrastructure</li>
+                            <li><i class="fas fa-check"></i> Monitoring & Analytics</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Google Cloud</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="Cloud Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How We Work</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">
+                    A streamlined approach that ensures quality delivery and client satisfaction
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We start by understanding your business goals, target audience, and project requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>We create a detailed project plan with timelines, milestones, and deliverables.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Our design team creates wireframes, prototypes, and visual designs for your approval.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>We build your solution using best practices and modern technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Testing</h3>
+                        <p>Rigorous testing ensures everything works perfectly across all devices and browsers.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Launch</h3>
+                        <p>We deploy your project and provide ongoing support and maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can help bring your vision to life with our expert team and proven process.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="openModal('quote-modal')">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </button>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cube"></i>
+                        <span>PixelCraft</span>
+                    </div>
+                    <p>We craft digital experiences that inspire, engage, and deliver results for businesses of all sizes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Design Street, Creative City, CC 12345</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@pixelcraft.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 PixelCraft Digital Agency. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Get a Quote</h2>
+                <button class="close-btn" onclick="closeModal('quote-modal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="quote-form" class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-name">Full Name *</label>
+                            <input type="text" id="quote-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-email">Email *</label>
+                            <input type="email" id="quote-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-service">Service Required *</label>
+                        <select id="quote-service" required>
+                            <option value="">Select a service</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="ui-ux-design">UI/UX Design</option>
+                            <option value="mobile-apps">Mobile Apps</option>
+                            <option value="cloud-solutions">Cloud Solutions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-budget">Project Budget</label>
+                        <select id="quote-budget">
+                            <option value="">Select budget range</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="10k-25k">$10,000 - $25,000</option>
+                            <option value="25k-50k">$25,000 - $50,000</option>
+                            <option value="50k+">$50,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-message">Project Details *</label>
+                        <textarea id="quote-message" rows="4" required placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Quote Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- External JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
